@@ -2,14 +2,13 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
-    right: 10%
+    top: 37%
+    right: 82%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 61%
+    right: 9%
 
 @keyframes float1
   0%
@@ -17,5 +16,302 @@
   100%
     transform: translateY(0px)
   
-.txt--green
-  color: #39A900 !important
+.titulo-principal.color-acento-contenido .titulo-principal__numero span
+  color: black !important  
+
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/fondo-paginas.png") !important
+
+// versión escritorio/movil
+@media (min-width: 992px)
+  .desktop 
+    display: inline
+  .movil 
+    display: none
+@media (max-width: 991px)
+  .movil 
+    display: inline
+  .desktop 
+    display: none
+
+.lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li, .lista-ul li i
+  display: flex
+
+.bg
+  &-c1
+    background-color: #66D16A
+    border-bottom-left-radius: 15px
+    border-bottom-right-radius: 15px
+    transition: all 0.5s ease
+    height: 240px
+    @media screen and (max-width: $bp-max-xl)
+      p.text-desc
+        font-size: 0.9em
+    @media screen and (max-width: $bp-max-lg)
+      height: 310px
+      p.text-desc
+        font-size: 0.9em
+    @media screen and (max-width: $bp-max-md)
+      height: auto
+      p.text-desc
+        font-size: 0.9em
+  &-c2
+    background-color: #0042DB
+    border-bottom-left-radius: 15px
+    border-bottom-right-radius: 15px
+    transition: all 0.5s ease
+    height: 240px
+    @media screen and (max-width: $bp-max-xl)
+      p.text-desc
+        font-size: 0.9em
+    @media screen and (max-width: $bp-max-lg)
+      height: 310px
+      p.text-desc
+        font-size: 0.9em
+    @media screen and (max-width: $bp-max-md)
+      height: auto
+      p.text-desc
+        font-size: 0.9em
+
+  &-c3
+    background: linear-gradient(to bottom, #FFF, #ECF1FC, #FFF)
+    margin-inline: -3rem !important
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+  
+  &-c4
+    background-image: url(../assets/curso/temas/tema2/fondo-verde.png)
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+    margin-inline: -3rem !important
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+  
+  &-c5
+    background-image: url(../assets/curso/temas/tema3/fondo-slyder.png)
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+    margin-inline: -3rem !important
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+
+.tarjeta--BG01
+  background-image: url("../assets/curso/temas/tema1/BG01.png")
+  background-size: cover 
+  background-repeat: no-repeat
+  background-position: center
+
+.fa-chevron-right, .fa-chevron-left
+  color: #FFA239
+
+.tarjeta-avatar-b__img
+  min-width: 15%
+  max-width: 15%
+  position: relative
+  display: flex
+  align-items: center
+
+.bg-color
+  &-1
+    background-color: #CCD9F8
+    border-radius: 15px
+  &-2
+    background-color:#DCEDC8
+
+.tarjeta
+  &--BGC01
+    background-image: url("../assets/curso/temas/tema2/fondo-tarjeta-horizontal.png")
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+
+  &--BGC02
+    background-image: url("../assets/curso/temas/tema2/fondo-tarjeta.png")
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+
+  &--BGC04
+    background-color: #E0F6E1 !important
+
+.cajon.C01
+  background-color: #E1FEFF
+
+//linea de tiempo d
+
+.linea-tiempo-d.color-acento-botones.especial
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__content
+      background-color: #CCD9F8 !important
+  .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+    background-color: #C2EDC3
+.tarjeta.tarjeta--gris
+  background-color: #FFDAAF
+
+.linea-tiempo-d__item__content__title
+  height: 50px
+
+.linea-tiempo-d.color-acento-botones.especial2
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__content
+      background-color: #F2F2F2 !important
+  .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+    background-color: #C2EDC3
+.tarjeta.tarjeta--gris
+  background-color: #FFDAAF
+
+.titulo, .cajon_texto
+  background-color:#DCEDC8
+
+.titulo
+  color: black
+  padding: 2px 10px
+  border-radius: 50px
+  display: inline-flex
+  align-items: center
+  justify-content: flex-start
+  height: 47px
+.titulo h4
+  margin-right: 23px
+
+.titulo img
+  width: 45px
+  height: 45px
+  margin-right: 10px
+  margin-left: -10px
+
+///////// Tarjetas hover --------------------------------------
+.crd_hover_txt
+  position: relative  
+  padding: 0 !important
+  overflow: hidden !important  
+  &:hover    
+    .crd_hover_txt--body   
+      background-color: #FFDAAF
+      transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 
+      transform: translateY(0)
+      h5.t2
+        color: $black
+        display: block
+        background-image: url('../assets/curso/temas/tema2/ico-up.svg')
+        background-size: 7% 100%
+        background-repeat: no-repeat
+        padding-left: 1.8rem
+      h5.t1
+        display: none
+        
+      @media (max-width:767px)  
+        p
+          font-size: 0.85em
+        h5.t2
+          background-size: 5.5% 100%
+
+.crd_hover_txt--body
+  position: absolute
+  padding: 1.5rem
+  bottom: 0    
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1)
+  transform: translateY(calc( 100% - 3.85rem ))
+  background-color: #FFDAAF
+  h5.t2
+      display: none
+  h5.t1
+    display: block
+    color: $black
+    cursor: pointer
+    background-image: url('../assets/curso/temas/tema2/ico-down.svg')
+    background-size: 8% 100%
+    background-repeat: no-repeat
+    padding-left: 1.8rem
+
+@media (min-width:1200px) and (max-width:1400px)  
+  .crd_hover_txt--body
+    p
+      font-size: 0.85em
+
+.crd_hover_txt .crd_hover_txt--body
+  padding: 1.5rem 0.8rem !important
+
+//- acordion
+.acordion__accion__btn--b
+  background-color: #FFA239
+  color: #000 !important
+  border: none
+
+.tarjeta--C01
+  background-color: #C2EDC3
+
+.bloque-texto-b.color-primario:before, .tarjeta.color1, .tarjeta.tarjeta--C01.acordion__activo
+  background-color: #F2F2F2
+
+.style___box_1
+  background-color: $color-adicional-3
+  padding: 0rem 1rem 0rem 0rem
+  img
+    margin-left: -0.8rem !important
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+
+
+// TARJETAS CON AVATAR
+.tarjeta-avatar
+  height: 100%
+  position: relative
+  padding-top: $tarjeta-avatar-ancho-img2 / 2
+  & > img
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+    display: block
+    width: $tarjeta-avatar-ancho-img2
+    margin: 0 auto
+  .tarjeta
+    display: inline-block
+    padding-top: 60px !important
+    height: 100%  
+
+/// INTRO
+.style___box_2
+  background-color: $color-adicional-1
+  padding: 1rem 1rem 1rem 0rem
+  img
+    margin-left: -1.8rem
+  p
+    margin-left: -1.8rem 
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+    p
+      margin-left: 0rem 
+  @media screen and (min-width: 1400px)
+    padding: 0rem 1rem 0rem 0rem !important
+
+.bg-full-width
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: bottom
+  margin-inline: -3.3rem
+  @media screen and (max-width: $bp-max-sm)
+    padding-left: 1.5rem
+    padding-right: 1.5rem
+
+//CLASES TITULOS//
+.titulo-con-imagen
+  display: flex
+  align-items: center
+  position: relative
+.titulo-con-imagen__fondo
+  background-color: #DCEDC8
+  border-radius: 20px
+  padding: 10px 20px
+  display: inline-flex
+  align-items: center
+.titulo-con-imagen__imagen
+  position: absolute
+  left: -5px
+  width: 42px
+.titulo-con-imagen__texto
+  margin: 0
+  padding-left: 25px
